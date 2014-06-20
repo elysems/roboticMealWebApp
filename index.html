@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Harry Potter Robotic Meal Design System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/webfontkit-20140524-200849/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="images/hpfavicon.gif">
+	<link rel="stylesheet" href="css/hpstyle.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			
+			<form id="ingredientChoice">
+				<img class= "logo" src="images/hplogo.jpg"  alt="the harry potter robotic meal design system">
+				<span>[</span><input type="text" id="ingredient1" placeholder="type thing 1 here"><span>]</span>
+				<span>[</span><input type="text" id="ingredient2" placeholder="type thing 2 here"><span>]</span>
+				<span>[</span><input type="text" id="ingredient3" placeholder="type thing 3 here"><span>]</span>
+				<button id="submitIngredient" class="pulse">
+					<svg class="boltButton" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 			width="60px" height="60px" viewBox="0 0 39.25 37.25"  xml:space="preserve">
+						<ellipse   stroke-miterlimit="10" cx="19.575" cy="18.83" rx="17.384" ry="16.612"/>
+						<g>
+							<path class="bolt" fill="#FFFFFF" d="M23.973,18.71l-0.064-9.725c-0.006-0.024-0.022-0.045-0.022-0.072V6.775c0-0.026,0.017-0.046,0.022-0.07V5
+							h-8.25l2.794,13.854l-3.327-0.868l4.991,15.827l0.666-4.657l0.465-5.012l0.267,0.314l2.527,2.29l-0.065-7.188
+							C23.912,19.278,23.925,18.994,23.973,18.71z"/>
+						</g>
+					</svg>
+				</button>
+				<img class="footer" src="images/footer.jpg" alt="">	
+			</form> <!-- end of form -->
+
+		</div><!-- end of header -->
+		<img src="images/topper.jpg" alt="" class="again">
+		<div class="recipeResults" id="recipeResults">
+		
+		</div><!-- end of recipeResults -->
+		<img class="again" src="images/footer.jpg" height="25" width="239" alt="">
+		<a href="http://roboticmeal.elysepower.com" class="again"><h2>Good Robot. One more time?</h2></a>
+
+	</div><!-- end of wrapper -->
+	<div id="animate">
+		<img class="bigBolt" src="images/hpboltimage.svg" alt="">
+	</div> <!-- end of animate -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="roboticmeal.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/*BORDERBOX*/
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+/*CLEARFIX*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*------------------------------------------------------*/
+
+body {
+	font-family: "courier";
+	background: #FAFBF5;
+	
+}
+
+.header {
+	margin-top: 9%;
+}
+
+.wrapper {
+	max-width: 600px;
+	margin: 3% auto 5% auto;
+	text-align: center;
+}
+
+.logo {
+	
+}
+
+#ingredientChoice {
+	max-width: 239px;
+	background: #FAFBF5;
+	margin: auto;
+}
+
+input[type=text] {
+	display: inline-block;
+	width: 183px;
+	max-width: 204px;
+	padding: 12px 5px;
+	background-color: #FAFBF5;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	font-family: "courier";
+	border: 1px solid #FAFBF5;
+	
+	&:focus {
+		outline: none;
+		border: 1px dashed black;
+	}
+}
+
+span {
+	font-size: 34px;
+}
+
+button {
+	background: none;
+	border: none;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.boltButton:hover {
+	fill:#959793;
+}
+
+#animate {
+	background: #000;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	display: none;
+	overflow: auto;
+	z-index: 1;
+	text-align: center;
+	.bigBolt {
+		height: 70%;
+		margin-top:10%;
+		width: 60%;
+	}
+}
+
+.recipeResults {
+	margin-left: 19%;
+}
+
+.fullRecipe {
+
+
+	img {
+		float: left;
+		border-radius: 50%;
+	}
+	
+	h2 {
+		font-size: 20px;
+		float: left;
+		padding: 0px 20px;
+		font-family: "courier";
+		text-transform: uppercase;
+		width: 67%;
+		font-weight: normal;
+		text-align: left;
+	}
+
+	a {
+		float: left;
+		color: black;
+		margin-top: 3%;
+	}
+
+}
+
+.again {
+	display: none;
+
+	h2 {
+		font-family: 'subway_novellaregular';
+		letter-spacing: 1.1px;
+		font-weight: normal;
+	}
+
+}
+
+img.again {
+	margin-top: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+	&:hover {
+		color: #959793;
+	}
+}
+
+h3 {
+	width: 73%;
+}
+
+@media (max-width: 400px) {
+	.recipeResults {
+		margin-left: 13%;
+	}
+
+	h3 {
+	width: 84%;
+	}
+
+	.fullRecipe h2 {
+		font-size: 18px;
+	}
+
+	.again h2 {
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 320px) {
+	.fullRecipe {
+		img {
+			width: 25%
+		}
+
+		h2 {
+			font-size: 15px;
+		}
+	}
+}
+
+
